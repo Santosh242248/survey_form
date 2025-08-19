@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/1st/style.css">
+</head>
+<body>
+    <div class="header">
+            <h1>Help us to improve us</h1>
+            <h2>Give survey and get 15% off on your next visit </h4>
+        </div>
+    <div class="container">
+        
+        <div class="form">
+            <form action="" onsubmit="return Validate()">
+                <div class="name">
+                    <h3>Name:</h3>
+                    <input type="text" id ="name" name="name">
+                    <h4 class="nameError"></h4>
+                </div>
+                <div class="age-group">
+                    <h3>Age group</h3>
+                    <select name="age-group" id="age-group">
+                        <option value="">Select your age group</option>
+                        <option value="18-30">18-30</option>
+                        <option value="31-50">31-50</option>
+                        <option value="50+">50+</option>
+                    </select>
+                    <h4 class="ageError"></h4>
+                </div>
+                <div class="extraQuestion" id="chornic">
+                    <h4 id="h4"><label>Do you have chronic illness:</label></h4>
+                <div class="button">
+                    <button type="button" id="yes" value="yes" class="bt">Yes</button>
+                    <button type="button" id="no" value="no" class="bt">No</button>
+                </div>
+                </div>
+                <div class="healthcare-service">
+                <h4><label for="service">Healthcare Service You Use:</label></h4>
+                <h4>
+                    <select name="service" id="service">
+                        <option value="">Select service</option>
+                        <option value="general-checkup">General Checkup</option>
+                        <option value="Medicine">Medicine</option>
+                        <option value="Prescription">Prescription</option>
+                        <option value="Surgery">Surgery</option>
+                    </select>
+                </h4>
+                <h4 class="serviceError"></h4>
+                </div>
+                <div class="Rate-our-service">
+                <h4>Rate our service:</h4>
+                <ul class="starContainer">
+                    <li><i class="star ri-star-fill" data-value="1"></i></li>
+                    <li><i class="star ri-star-fill" data-value="2"></i></li>
+                    <li><i class="star ri-star-fill" data-value="3"></i></li>
+                    <li><i class="star ri-star-fill" data-value="4"></i></li>
+                    <li><i class="star ri-star-fill" data-value="5"></i></li>
+                </ul>
+                <h4 class="StarError"></h4>
+            </div>
+            <div class="reason" id="reasonSection">
+                <h4>What didn't you like about our service?</h4>
+                <textarea name="reason" id="reason"></textarea>
+            </div>
+            <div class="improvement">
+                <h4>How can we improve our service?</h4>
+                <textarea name="improvement" id="improvement"></textarea>
+            </div>
+             <div class="recommend">
+                <h4>Would you recommend this service?</h4>
+                <div class="yn">
+                    <label>
+                        <input type="radio" name="recommend" value="yes" >
+                        <span>Yes</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="recommend" value="no" >
+                        <span>No</span>
+                    </label>
+                </div>
+                <h4 class="yeasNo"></h4>  
+            </div>
+            <div class="submit">
+                <input type="submit" value="Submit" class="sub">
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
